@@ -11,9 +11,7 @@
     background-color: var(--light);
   }
   
-  header {
-    line-height: 100px;
-  }
+
 
   body {
     font-family: 'Karla', sans-serif;

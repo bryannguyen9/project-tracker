@@ -29,19 +29,62 @@
       </header>
       <div class="container-lg px-5"></div>
     <!-- create and apply a custom class name "hero" -->
-    <section class="hero py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 text-end">
-            <h1>Welcome to the guestbook!</h1>
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda optio expedita consequuntur odio nostrum alias id eius
-              distinctio, quaerat ullam mollitia error aliquam sunt delectus
-              molestias autem rerum dignissimos quidem.
-            </p>
-          </div>
-          <div class="col-12 col-md-6">
+    <div class="container row "></div>
+      <div class="col-12 col-sm 6 col-md-3 mb-3">
+        <div class="card">
+        <h2 class="card-header">Instructions</h2>
+        </div>
+        <div class="row card-body">
+          <p class="card-text">Click the button below to open a form and provide information for the following:</p>
+        </div>
+        <div class="row card-body">
+          <p class="card-text">Project Name</p>
+        </div>
+        <div class="row card-body">
+          <p class="card-text">Project Type</p>
+        </div>
+        <div class="row card-body">
+          <p class="card-text">Due Date</p>
+        </div>
+        
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add Project
+    </button>
+  
+  <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add A Project By Inputting Info Below</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="projName">Project Name:</label>
+                                <input type="text" class="form-control" id="projName">
+                            </div>
+                            <div class="form-group">
+                                <label for="projType">Project Type:</label>
+                                <input type="type" class="form-control" id="projType"><!--include drop down-->
+                            </div>
+                            <div class="form-group">
+                                <label for="dueDate">Due Date: </label>
+                                <input type="date" class="form-control" id="dueDate"><!--include date calendar drop-->
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+
+          <div class="col-12 col-md-9">
             <form id="guestbook-form">
               <div class="mb-3">
                 <input
