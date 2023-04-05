@@ -11,6 +11,10 @@
     background-color: var(--light);
   }
   
+  header {
+    line-height: 100px;
+  }
+
   body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
@@ -27,18 +31,7 @@
     font-weight: 700;
   }
   
-  .custom-navbar {
-    background-color: var(--teal);
-  }
-  
-  .custom-navbar a {
-    font-size: 1.5rem;
-    color: var(--lightteal);
-  }
-  
-  .custom-navbar a:hover {
-    color: var(--light);
-  }
+
   
   .hero {
     background-color: var(--lightteal);
@@ -63,5 +56,11 @@
   .custom-card-header {
     background-color: var(--teal);
     color: var(--lightteal);
+  }
+
+  .lead {
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 2%;
+    color: var(--font-answer);
   }
   

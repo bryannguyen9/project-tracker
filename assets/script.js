@@ -46,3 +46,15 @@ var handleFormSubmit = function (event) {
 };
 
 formEl.on('submit', handleFormSubmit);
+
+
+function currentTime () {
+    var today = dayjs();
+    $('#currentDate').text(today.format('dddd, MMMM D, YYYY [at] h:m:ss a'));
+
+    
+}
+
+currentTime();
+setInterval(currentTime, 1000);
+

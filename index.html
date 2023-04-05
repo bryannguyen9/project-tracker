@@ -17,35 +17,17 @@
     />
 
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Extending Bootstrap</title>
+    <title>Project Scheduler</title>
   </head>
-
+  
+  
   <body>
-    <!-- create and apply a custom class name "custom-navbar" -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">The Guestbook</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-item nav-link" href="#">Home</a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+    <header class="p-5 mb-4 border-5 border-bottom border-dark text-center bg-dark text-light ">
+        <h1 class="display-3">Project Tracker</h1>
+        <p class="lead">Current Time & Date:</p>
+        <p id="currentDate" class="lead"></p>
+      </header>
+      <div class="container-lg px-5"></div>
     <!-- create and apply a custom class name "hero" -->
     <section class="hero py-5">
       <div class="container">
@@ -95,5 +77,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <script src="./assets/script.js"></script>
 </html>
